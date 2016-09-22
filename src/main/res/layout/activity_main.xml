@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.easyhoms.event.activity.MainActivity">
+
+    <com.easyhoms.event.bean.ALayout
+        android:id="@+id/a"
+        android:background="#898989"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        >
+
+        <com.easyhoms.event.bean.BLayout
+            android:id="@+id/b"
+            android:layout_margin="40dp"
+            android:background="#404040"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.easyhoms.event.bean.CView
+                android:id="@+id/c"
+                android:layout_margin="40dp"
+                android:background="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="你好吗"/>
+        </com.easyhoms.event.bean.BLayout>
+
+    </com.easyhoms.event.bean.ALayout>
+
+    <TextView
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/clear"
+        android:text="清空结果"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+</LinearLayout>
